@@ -6,20 +6,19 @@ from awsglue.dynamicframe import DynamicFrame
 from awsglue.job import Job
 from pyspark.sql.functions import udf
 from pyspark.sql.types import StringType
+from phone_iso3166.country import phone_country
+import pycountry
 
 def parse_country_from_number(phone_number):
     """
     Parse country code from e.164 phone number
     TODO replace with https://pypi.org/project/phone-iso3166/
     """
-    if phone_number.startswith('+1'):
-        return 'US'
-    elif phone_number.startswith('+20'):
-        return 'EG'
-    elif phone_number.startswith('+30'):
-        return 'Greece'
-    else:
-        return 'Others'
+    try:
+        c = pycountry.countries.get(alpha_2=phone_country(phone_number))
+        return c.name
+    except Exception as e:
+        return 'Unknown'
 
 
 
