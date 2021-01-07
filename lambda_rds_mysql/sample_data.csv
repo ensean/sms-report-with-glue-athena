@@ -1,0 +1,4 @@
+PublishTimeUTC,MessageId,DestinationPhoneNumber,MessageType,DeliveryStatus,PriceInUSD,PartNumber,TotalParts
+2020-05-10T03:00:29.476Z,96a298bc-1458-4825-a7eb-7330e0720b72,+201XXX5550100,Promotional,Message has been accepted by phone carrier,0.90084,0,1
+2020-05-10T03:00:29.561Z,1e29d364-d7f4-4dc9-996e-26412032c344,+11XXX5550100,Promotional,Message has been accepted by phone carrier,0.34322,0,1
+2020-05-10T03:00:30.769Z,98ba951c-afc7-4c51-ba2c-56c6570a6c08,+861XXX5550100,Transactional,Message has been accepted by phone carrier,0.27815,0,1
