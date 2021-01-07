@@ -10,9 +10,9 @@
 
 3. 创建RDS数据库、表，留意VPC、安全组配置
 
-3）创建Lambda，添加两个Layer，VPC、安全组配置确保与RDS互通
+4. 创建Lambda，添加两个Layer，VPC、安全组配置确保与RDS互通
 
-4）测试数据是否能够成功写入到RDS MySQL
+5. 测试数据是否能够成功写入到RDS MySQL
 
 
 
